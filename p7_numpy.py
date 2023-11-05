@@ -42,7 +42,13 @@ n3 = np.array([[1,2],[3,4]])
 # print(n1 >= n2)
 
 # 数组复制
-n1 = np.array([1,2], np.uint8)
-n2 = np.copy(n1)
-n1[0] = 3
-print(n1, n2)
+# n1 = np.array([1,2], np.uint8)
+# n2 = np.copy(n1)
+# n1[0] = 3
+# print(n1, n2)
+
+# 拼接
+n1 = np.array([1,2,3], np.uint8)
+n2 = np.array([4,5,6], np.uint8)
+print(np.hstack((n1, n2)))
+print(np.vstack((n1, n2)))
